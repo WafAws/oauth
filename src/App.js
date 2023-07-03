@@ -57,7 +57,7 @@ function App() {
   function getUser() {
     return Auth.currentAuthenticatedUser()
       .then(userData => userData)
-      .catch(() => console.log('Not signed in'));
+      .catch(() => console.log('Not signed in fdfdf'));
   }
 
   return (
