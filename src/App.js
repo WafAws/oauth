@@ -11,7 +11,7 @@ const isLocalhost = Boolean(
       /^127(?:\.(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)){3}$/
     )
 );
-const [
+/*const [
   localRedirectSignIn,
   productionRedirectSignIn,
 ] = awsConfig.oauth.redirectSignIn.split(',');
@@ -27,9 +27,9 @@ const updatedAwsConfig = {  ...awsConfig,
     redirectSignIn: isLocalhost ? localRedirectSignIn : productionRedirectSignIn,
     redirectSignOut: isLocalhost ? localRedirectSignOut : productionRedirectSignOut,
   }
-}
+}*/
 
-Amplify.configure(updatedAwsConfig);
+Amplify.configure(awsConfig);
 
 function App() {
   const [user, setUser] = useState(null);
