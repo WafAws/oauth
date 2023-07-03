@@ -21,8 +21,7 @@ const [
   productionRedirectSignOut,
 ] = awsConfig.oauth.redirectSignOut.split(',');
 
-const updatedAwsConfig = {
-  ...awsConfig,
+const updatedAwsConfig = {  ...awsConfig,
   oauth: {
     ...awsConfig.oauth,
     redirectSignIn: isLocalhost ? localRedirectSignIn : productionRedirectSignIn,

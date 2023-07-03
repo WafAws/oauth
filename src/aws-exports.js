@@ -16,8 +16,8 @@ const awsmobile = {
             "profile",
             "aws.cognito.signin.user.admin"
         ],
-        "redirectSignIn": "https://wafalab.awsps.myinstance.com/",
-        "redirectSignOut": "https://wafalab.awsps.myinstance.com/",
+        "redirectSignIn": "http://localhost:3000/,https://wafalab.awsps.myinstance.com/",
+        "redirectSignOut": "http://localhost:3000/,https://wafalab.awsps.myinstance.com/",
         "responseType": "code"
     },
     "federationTarget": "COGNITO_USER_POOLS",
